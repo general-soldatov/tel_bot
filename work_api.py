@@ -1,9 +1,11 @@
 import requests
 import time
 from typing import List
+from dotenv import dotenv_values
 
 API_URL = 'https://api.telegram.org/bot'
-BOT_TOKEN = "6652727133:AAG5ffEy8gH1CbMIxZq5DZOe9cIoteWbfV8"
+ENV = dotenv_values('.env')
+BOT_TOKEN = ENV['BOT_TOKEN']
 TEXT = 'This is cool update!'
 MAX_COUNTER = 50
 
