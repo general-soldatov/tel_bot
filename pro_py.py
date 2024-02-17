@@ -1,13 +1,6 @@
-def turn_surprize(number, sep=5):
-    """функция для переворота числа до определённого значения
-    """
-    raz = len(number)
-    chis = int(number)
-    result = 0
-    for i in range(1, sep+1):
-        result += chis % 10 * 10**(sep-i)
-        chis //= 10
-    result += chis * 100000
-    return result
+def get_string(string: str, number: int) -> str:
+    '''This function
+    '''
+    return string * number
 
-print(turn_surprize(input('Enter number: ')))
+print()
